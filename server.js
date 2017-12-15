@@ -37,7 +37,7 @@ connection.query('CREATE DATABASE IF NOT EXISTS qlue', function (err) {
     });
 });
 
-app.get('/', (req,res) => {
+app.get('/listUser', (req,res) => {
 
     connection.query('SELECT * from users', function (error, results, fields) {
         if (error) throw error;
