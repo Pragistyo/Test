@@ -51,7 +51,7 @@ app.get('/listUser', (req,res) => {
 
 })
 
-app.post('/', (req,res) => {
+app.post('/postUser', (req,res) => {
     const dataFirstname = req.body.firstname
     const dataLastname  = req.body.lastname
     
