@@ -63,7 +63,7 @@ app.post('/', (req,res) => {
 
 // connection.end();
 
-app.listen(3000 || process.env.PORT,(err) => {
+app.listen(process.env.PORT || 3000 ,(err) => {
     if(err) console.log('error CONNECTION')
     console.log('PORT 3000!')
 })
